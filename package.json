@@ -1,0 +1,11 @@
+{
+  "name": "gimmie-obj-c-api",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gimmie/objective-c.git"
+  }
+}
