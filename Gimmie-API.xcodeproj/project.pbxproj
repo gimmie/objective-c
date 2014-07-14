@@ -10,7 +10,7 @@
 		BC812EA51973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
 		BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB21973AE82005AAE46 /* XCTest.framework */; };
 		BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
-		BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA11973AE81005AAE46 /* libGimmie API.a */; };
+		BC812EB91973AE82005AAE46 /* libGimmieAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA11973AE81005AAE46 /* libGimmieAPI.a */; };
 		BC812ED41973AEF3005AAE46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC812ECF1973AEF3005AAE46 /* InfoPlist.strings */; };
 		BC812EFF1973AF11005AAE46 /* GMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812ED91973AF11005AAE46 /* GMAnalytics.m */; };
 		BC812F001973AF11005AAE46 /* GMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812ED91973AF11005AAE46 /* GMAnalytics.m */; };
@@ -83,7 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BC812EA11973AE81005AAE46 /* libGimmie API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGimmie API.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC812EA11973AE81005AAE46 /* libGimmieAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGimmieAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC812EA41973AE82005AAE46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Gimmie Objective-C APITests.xctest"; path = "Gimmie API Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC812EB21973AE82005AAE46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */,
-				BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */,
+				BC812EB91973AE82005AAE46 /* libGimmieAPI.a in Frameworks */,
 				BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +172,7 @@
 		BC812EA21973AE81005AAE46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC812EA11973AE81005AAE46 /* libGimmie API.a */,
+				BC812EA11973AE81005AAE46 /* libGimmieAPI.a */,
 				BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */,
 			);
 			name = Products;
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC812EA01973AE81005AAE46 /* Gimmie API */ = {
+		BC812EA01973AE81005AAE46 /* GimmieAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API" */;
+			buildConfigurationList = BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "GimmieAPI" */;
 			buildPhases = (
 				BC812E9D1973AE81005AAE46 /* Sources */,
 				BC812E9E1973AE81005AAE46 /* Frameworks */,
@@ -288,14 +288,14 @@
 			);
 			dependencies = (
 			);
-			name = "Gimmie API";
+			name = GimmieAPI;
 			productName = "Gimmie Objective-C API";
-			productReference = BC812EA11973AE81005AAE46 /* libGimmie API.a */;
+			productReference = BC812EA11973AE81005AAE46 /* libGimmieAPI.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BC812EB01973AE82005AAE46 /* Gimmie API Tests */ = {
+		BC812EB01973AE82005AAE46 /* GimmieAPI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API Tests" */;
+			buildConfigurationList = BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "GimmieAPI Tests" */;
 			buildPhases = (
 				BC812EAD1973AE82005AAE46 /* Sources */,
 				BC812EAE1973AE82005AAE46 /* Frameworks */,
@@ -306,7 +306,7 @@
 			dependencies = (
 				BC812EB81973AE82005AAE46 /* PBXTargetDependency */,
 			);
-			name = "Gimmie API Tests";
+			name = "GimmieAPI Tests";
 			productName = "Gimmie Objective-C APITests";
 			productReference = BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -332,8 +332,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC812EA01973AE81005AAE46 /* Gimmie API */,
-				BC812EB01973AE82005AAE46 /* Gimmie API Tests */,
+				BC812EA01973AE81005AAE46 /* GimmieAPI */,
+				BC812EB01973AE82005AAE46 /* GimmieAPI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 /* Begin PBXTargetDependency section */
 		BC812EB81973AE82005AAE46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC812EA01973AE81005AAE46 /* Gimmie API */;
+			target = BC812EA01973AE81005AAE46 /* GimmieAPI */;
 			targetProxy = BC812EB71973AE82005AAE46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API" */ = {
+		BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "GimmieAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC812EC51973AE82005AAE46 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API Tests" */ = {
+		BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "GimmieAPI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC812EC81973AE82005AAE46 /* Debug */,
