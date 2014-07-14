@@ -1,0 +1,25 @@
+# OSX Temporary files
+.DS_Store
+*.swp
+*.lock
+profile
+
+node_modules/
+
+# Don't include binary files
+build
+
+# Generated documents folder
+docs/
+
+# Generated build files
+build/
+
+# Remove all user data
+xcuserdata
+
+# Remove all checkout data
+*.xccheckout
+
+# Deprecated classes
+*.moved-aside
