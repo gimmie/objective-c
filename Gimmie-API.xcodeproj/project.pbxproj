@@ -10,7 +10,6 @@
 		BC812EA51973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
 		BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB21973AE82005AAE46 /* XCTest.framework */; };
 		BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
-		BC812EB61973AE82005AAE46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB51973AE82005AAE46 /* UIKit.framework */; };
 		BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA11973AE81005AAE46 /* libGimmie API.a */; };
 		BC812ED41973AEF3005AAE46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC812ECF1973AEF3005AAE46 /* InfoPlist.strings */; };
 		BC812EFF1973AF11005AAE46 /* GMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812ED91973AF11005AAE46 /* GMAnalytics.m */; };
@@ -86,9 +85,8 @@
 /* Begin PBXFileReference section */
 		BC812EA11973AE81005AAE46 /* libGimmie API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGimmie API.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC812EA41973AE82005AAE46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gimmie Objective-C APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Gimmie Objective-C APITests.xctest"; path = "Gimmie API Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC812EB21973AE82005AAE46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BC812EB51973AE82005AAE46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BC812ED01973AEF3005AAE46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC812ED81973AF11005AAE46 /* GMAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAnalytics.h; sourceTree = "<group>"; };
 		BC812ED91973AF11005AAE46 /* GMAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAnalytics.m; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */,
-				BC812EB61973AE82005AAE46 /* UIKit.framework in Frameworks */,
 				BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */,
 				BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */,
 			);
@@ -186,7 +183,6 @@
 			children = (
 				BC812EA41973AE82005AAE46 /* Foundation.framework */,
 				BC812EB21973AE82005AAE46 /* XCTest.framework */,
-				BC812EB51973AE82005AAE46 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
