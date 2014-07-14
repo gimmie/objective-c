@@ -15,9 +15,23 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BC812EA01973AE81005AAE46"
-               BuildableName = "libGimmie Objective-C API.a"
-               BlueprintName = "Gimmie Objective-C API"
-               ReferencedContainer = "container:Gimmie Objective-C API.xcodeproj">
+               BuildableName = "libGimmie API.a"
+               BlueprintName = "Gimmie API"
+               ReferencedContainer = "container:Gimmie-API.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BC812EB01973AE82005AAE46"
+               BuildableName = "Gimmie API Tests.xctest"
+               BlueprintName = "Gimmie API Tests"
+               ReferencedContainer = "container:Gimmie-API.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BC812EB01973AE82005AAE46"
-               BuildableName = "Gimmie Objective-C APITests.xctest"
-               BlueprintName = "Gimmie Objective-C APITests"
-               ReferencedContainer = "container:Gimmie Objective-C API.xcodeproj">
+               BuildableName = "Gimmie API Tests.xctest"
+               BlueprintName = "Gimmie API Tests"
+               ReferencedContainer = "container:Gimmie-API.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,6 +78,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Gimmie API"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

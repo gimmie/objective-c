@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC812EA51973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
+		BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB21973AE82005AAE46 /* XCTest.framework */; };
+		BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
+		BC812EB61973AE82005AAE46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB51973AE82005AAE46 /* UIKit.framework */; };
+		BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA11973AE81005AAE46 /* libGimmie API.a */; };
+		BC812ED41973AEF3005AAE46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC812ECF1973AEF3005AAE46 /* InfoPlist.strings */; };
+		BC812EFF1973AF11005AAE46 /* GMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812ED91973AF11005AAE46 /* GMAnalytics.m */; };
+		BC812F001973AF11005AAE46 /* GMAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812ED91973AF11005AAE46 /* GMAnalytics.m */; };
+		BC812F011973AF11005AAE46 /* GMGATracker.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EDB1973AF11005AAE46 /* GMGATracker.m */; };
+		BC812F021973AF11005AAE46 /* GMGATracker.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EDB1973AF11005AAE46 /* GMGATracker.m */; };
+		BC812F031973AF11005AAE46 /* GMService.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EDD1973AF11005AAE46 /* GMService.m */; };
+		BC812F041973AF11005AAE46 /* GMService.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EDD1973AF11005AAE46 /* GMService.m */; };
+		BC812F051973AF11005AAE46 /* GMAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE01973AF11005AAE46 /* GMAction.m */; };
+		BC812F061973AF11005AAE46 /* GMAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE01973AF11005AAE46 /* GMAction.m */; };
+		BC812F071973AF11005AAE46 /* GMBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE21973AF11005AAE46 /* GMBadge.m */; };
+		BC812F081973AF11005AAE46 /* GMBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE21973AF11005AAE46 /* GMBadge.m */; };
+		BC812F091973AF11005AAE46 /* GMBadgeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE41973AF11005AAE46 /* GMBadgeCategory.m */; };
+		BC812F0A1973AF11005AAE46 /* GMBadgeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE41973AF11005AAE46 /* GMBadgeCategory.m */; };
+		BC812F0B1973AF11005AAE46 /* GMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE61973AF11005AAE46 /* GMCategory.m */; };
+		BC812F0C1973AF11005AAE46 /* GMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE61973AF11005AAE46 /* GMCategory.m */; };
+		BC812F0D1973AF11005AAE46 /* GMClaim.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE81973AF11005AAE46 /* GMClaim.m */; };
+		BC812F0E1973AF11005AAE46 /* GMClaim.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EE81973AF11005AAE46 /* GMClaim.m */; };
+		BC812F0F1973AF11005AAE46 /* GMCombineResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEA1973AF11005AAE46 /* GMCombineResponse.m */; };
+		BC812F101973AF11005AAE46 /* GMCombineResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEA1973AF11005AAE46 /* GMCombineResponse.m */; };
+		BC812F111973AF11005AAE46 /* GMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEC1973AF11005AAE46 /* GMEvent.m */; };
+		BC812F121973AF11005AAE46 /* GMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEC1973AF11005AAE46 /* GMEvent.m */; };
+		BC812F131973AF11005AAE46 /* GMIDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEE1973AF11005AAE46 /* GMIDObject.m */; };
+		BC812F141973AF11005AAE46 /* GMIDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EEE1973AF11005AAE46 /* GMIDObject.m */; };
+		BC812F151973AF11005AAE46 /* GMMayorship.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF01973AF11005AAE46 /* GMMayorship.m */; };
+		BC812F161973AF11005AAE46 /* GMMayorship.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF01973AF11005AAE46 /* GMMayorship.m */; };
+		BC812F171973AF11005AAE46 /* GMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF21973AF11005AAE46 /* GMProfile.m */; };
+		BC812F181973AF11005AAE46 /* GMProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF21973AF11005AAE46 /* GMProfile.m */; };
+		BC812F191973AF11005AAE46 /* GMRecentAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF41973AF11005AAE46 /* GMRecentAction.m */; };
+		BC812F1A1973AF11005AAE46 /* GMRecentAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF41973AF11005AAE46 /* GMRecentAction.m */; };
+		BC812F1B1973AF11005AAE46 /* GMReward.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF61973AF11005AAE46 /* GMReward.m */; };
+		BC812F1C1973AF11005AAE46 /* GMReward.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF61973AF11005AAE46 /* GMReward.m */; };
+		BC812F1D1973AF11005AAE46 /* GMStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF81973AF11005AAE46 /* GMStore.m */; };
+		BC812F1E1973AF11005AAE46 /* GMStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EF81973AF11005AAE46 /* GMStore.m */; };
+		BC812F1F1973AF11005AAE46 /* GMTier.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFA1973AF11005AAE46 /* GMTier.m */; };
+		BC812F201973AF11005AAE46 /* GMTier.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFA1973AF11005AAE46 /* GMTier.m */; };
+		BC812F211973AF11005AAE46 /* GMTopPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFC1973AF11005AAE46 /* GMTopPlayer.m */; };
+		BC812F221973AF11005AAE46 /* GMTopPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFC1973AF11005AAE46 /* GMTopPlayer.m */; };
+		BC812F231973AF11005AAE46 /* GMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFE1973AF11005AAE46 /* GMUser.m */; };
+		BC812F241973AF11005AAE46 /* GMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812EFE1973AF11005AAE46 /* GMUser.m */; };
+		BC812F3B1973AFFB005AAE46 /* NSData+GMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F2C1973AFFB005AAE46 /* NSData+GMAddition.m */; };
+		BC812F3C1973AFFB005AAE46 /* NSData+GMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F2C1973AFFB005AAE46 /* NSData+GMAddition.m */; };
+		BC812F3D1973AFFB005AAE46 /* NSString+GMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F2E1973AFFB005AAE46 /* NSString+GMAddition.m */; };
+		BC812F3E1973AFFB005AAE46 /* NSString+GMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F2E1973AFFB005AAE46 /* NSString+GMAddition.m */; };
+		BC812F6F1973B144005AAE46 /* GMNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */; };
+		BC812F701973B147005AAE46 /* GMNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */; };
+		BC812F761973BEC9005AAE46 /* Gimmie APITests.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC812F741973BEC9005AAE46 /* Gimmie APITests.plist */; };
+		BC812F771973BEC9005AAE46 /* Gimmie_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F751973BEC9005AAE46 /* Gimmie_APITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC812EB71973AE82005AAE46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC812E991973AE81005AAE46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC812EA01973AE81005AAE46;
+			remoteInfo = "Gimmie Objective-C API";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC812E9F1973AE81005AAE46 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC812EA11973AE81005AAE46 /* libGimmie API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGimmie API.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC812EA41973AE82005AAE46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gimmie Objective-C APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC812EB21973AE82005AAE46 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC812EB51973AE82005AAE46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BC812ED01973AEF3005AAE46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC812ED81973AF11005AAE46 /* GMAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAnalytics.h; sourceTree = "<group>"; };
+		BC812ED91973AF11005AAE46 /* GMAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAnalytics.m; sourceTree = "<group>"; };
+		BC812EDA1973AF11005AAE46 /* GMGATracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGATracker.h; sourceTree = "<group>"; };
+		BC812EDB1973AF11005AAE46 /* GMGATracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGATracker.m; sourceTree = "<group>"; };
+		BC812EDC1973AF11005AAE46 /* GMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMService.h; sourceTree = "<group>"; };
+		BC812EDD1973AF11005AAE46 /* GMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMService.m; sourceTree = "<group>"; };
+		BC812EDF1973AF11005AAE46 /* GMAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAction.h; sourceTree = "<group>"; };
+		BC812EE01973AF11005AAE46 /* GMAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAction.m; sourceTree = "<group>"; };
+		BC812EE11973AF11005AAE46 /* GMBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBadge.h; sourceTree = "<group>"; };
+		BC812EE21973AF11005AAE46 /* GMBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBadge.m; sourceTree = "<group>"; };
+		BC812EE31973AF11005AAE46 /* GMBadgeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBadgeCategory.h; sourceTree = "<group>"; };
+		BC812EE41973AF11005AAE46 /* GMBadgeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBadgeCategory.m; sourceTree = "<group>"; };
+		BC812EE51973AF11005AAE46 /* GMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCategory.h; sourceTree = "<group>"; };
+		BC812EE61973AF11005AAE46 /* GMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCategory.m; sourceTree = "<group>"; };
+		BC812EE71973AF11005AAE46 /* GMClaim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMClaim.h; sourceTree = "<group>"; };
+		BC812EE81973AF11005AAE46 /* GMClaim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMClaim.m; sourceTree = "<group>"; };
+		BC812EE91973AF11005AAE46 /* GMCombineResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCombineResponse.h; sourceTree = "<group>"; };
+		BC812EEA1973AF11005AAE46 /* GMCombineResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCombineResponse.m; sourceTree = "<group>"; };
+		BC812EEB1973AF11005AAE46 /* GMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEvent.h; sourceTree = "<group>"; };
+		BC812EEC1973AF11005AAE46 /* GMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEvent.m; sourceTree = "<group>"; };
+		BC812EED1973AF11005AAE46 /* GMIDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMIDObject.h; sourceTree = "<group>"; };
+		BC812EEE1973AF11005AAE46 /* GMIDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMIDObject.m; sourceTree = "<group>"; };
+		BC812EEF1973AF11005AAE46 /* GMMayorship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMayorship.h; sourceTree = "<group>"; };
+		BC812EF01973AF11005AAE46 /* GMMayorship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMayorship.m; sourceTree = "<group>"; };
+		BC812EF11973AF11005AAE46 /* GMProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMProfile.h; sourceTree = "<group>"; };
+		BC812EF21973AF11005AAE46 /* GMProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMProfile.m; sourceTree = "<group>"; };
+		BC812EF31973AF11005AAE46 /* GMRecentAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMRecentAction.h; sourceTree = "<group>"; };
+		BC812EF41973AF11005AAE46 /* GMRecentAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMRecentAction.m; sourceTree = "<group>"; };
+		BC812EF51973AF11005AAE46 /* GMReward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMReward.h; sourceTree = "<group>"; };
+		BC812EF61973AF11005AAE46 /* GMReward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMReward.m; sourceTree = "<group>"; };
+		BC812EF71973AF11005AAE46 /* GMStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMStore.h; sourceTree = "<group>"; };
+		BC812EF81973AF11005AAE46 /* GMStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMStore.m; sourceTree = "<group>"; };
+		BC812EF91973AF11005AAE46 /* GMTier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTier.h; sourceTree = "<group>"; };
+		BC812EFA1973AF11005AAE46 /* GMTier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTier.m; sourceTree = "<group>"; };
+		BC812EFB1973AF11005AAE46 /* GMTopPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTopPlayer.h; sourceTree = "<group>"; };
+		BC812EFC1973AF11005AAE46 /* GMTopPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTopPlayer.m; sourceTree = "<group>"; };
+		BC812EFD1973AF11005AAE46 /* GMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUser.h; sourceTree = "<group>"; };
+		BC812EFE1973AF11005AAE46 /* GMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUser.m; sourceTree = "<group>"; };
+		BC812F271973AFAF005AAE46 /* Gimmie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gimmie.pch; sourceTree = "<group>"; };
+		BC812F2B1973AFFB005AAE46 /* NSData+GMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GMAddition.h"; sourceTree = "<group>"; };
+		BC812F2C1973AFFB005AAE46 /* NSData+GMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GMAddition.m"; sourceTree = "<group>"; };
+		BC812F2D1973AFFB005AAE46 /* NSString+GMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GMAddition.h"; sourceTree = "<group>"; };
+		BC812F2E1973AFFB005AAE46 /* NSString+GMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GMAddition.m"; sourceTree = "<group>"; };
+		BC812F6D1973B144005AAE46 /* GMNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMNetworkOperation.h; sourceTree = "<group>"; };
+		BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNetworkOperation.m; sourceTree = "<group>"; };
+		BC812F741973BEC9005AAE46 /* Gimmie APITests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gimmie APITests.plist"; sourceTree = "<group>"; };
+		BC812F751973BEC9005AAE46 /* Gimmie_APITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gimmie_APITests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC812E9E1973AE81005AAE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC812EA51973AE82005AAE46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC812EAE1973AE82005AAE46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */,
+				BC812EB61973AE82005AAE46 /* UIKit.framework in Frameworks */,
+				BC812EB91973AE82005AAE46 /* libGimmie API.a in Frameworks */,
+				BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC812E981973AE81005AAE46 = {
+			isa = PBXGroup;
+			children = (
+				BC812ECA1973AEF3005AAE46 /* API */,
+				BC812ECE1973AEF3005AAE46 /* Tests */,
+				BC812EA31973AE81005AAE46 /* Frameworks */,
+				BC812EA21973AE81005AAE46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC812EA21973AE81005AAE46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC812EA11973AE81005AAE46 /* libGimmie API.a */,
+				BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC812EA31973AE81005AAE46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC812EA41973AE82005AAE46 /* Foundation.framework */,
+				BC812EB21973AE82005AAE46 /* XCTest.framework */,
+				BC812EB51973AE82005AAE46 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC812ECA1973AEF3005AAE46 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC812F6D1973B144005AAE46 /* GMNetworkOperation.h */,
+				BC812EDC1973AF11005AAE46 /* GMService.h */,
+				BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */,
+				BC812EDD1973AF11005AAE46 /* GMService.m */,
+				BC812F271973AFAF005AAE46 /* Gimmie.pch */,
+				BC812ED71973AF11005AAE46 /* analytics */,
+				BC812EDE1973AF11005AAE46 /* models */,
+				BC812F281973AFFB005AAE46 /* utils */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC812ECE1973AEF3005AAE46 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC812ECF1973AEF3005AAE46 /* InfoPlist.strings */,
+				BC812F741973BEC9005AAE46 /* Gimmie APITests.plist */,
+				BC812F751973BEC9005AAE46 /* Gimmie_APITests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BC812ED71973AF11005AAE46 /* analytics */ = {
+			isa = PBXGroup;
+			children = (
+				BC812ED81973AF11005AAE46 /* GMAnalytics.h */,
+				BC812ED91973AF11005AAE46 /* GMAnalytics.m */,
+				BC812EDA1973AF11005AAE46 /* GMGATracker.h */,
+				BC812EDB1973AF11005AAE46 /* GMGATracker.m */,
+			);
+			path = analytics;
+			sourceTree = "<group>";
+		};
+		BC812EDE1973AF11005AAE46 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC812EDF1973AF11005AAE46 /* GMAction.h */,
+				BC812EE01973AF11005AAE46 /* GMAction.m */,
+				BC812EE11973AF11005AAE46 /* GMBadge.h */,
+				BC812EE21973AF11005AAE46 /* GMBadge.m */,
+				BC812EE31973AF11005AAE46 /* GMBadgeCategory.h */,
+				BC812EE41973AF11005AAE46 /* GMBadgeCategory.m */,
+				BC812EE51973AF11005AAE46 /* GMCategory.h */,
+				BC812EE61973AF11005AAE46 /* GMCategory.m */,
+				BC812EE71973AF11005AAE46 /* GMClaim.h */,
+				BC812EE81973AF11005AAE46 /* GMClaim.m */,
+				BC812EE91973AF11005AAE46 /* GMCombineResponse.h */,
+				BC812EEA1973AF11005AAE46 /* GMCombineResponse.m */,
+				BC812EEB1973AF11005AAE46 /* GMEvent.h */,
+				BC812EEC1973AF11005AAE46 /* GMEvent.m */,
+				BC812EED1973AF11005AAE46 /* GMIDObject.h */,
+				BC812EEE1973AF11005AAE46 /* GMIDObject.m */,
+				BC812EEF1973AF11005AAE46 /* GMMayorship.h */,
+				BC812EF01973AF11005AAE46 /* GMMayorship.m */,
+				BC812EF11973AF11005AAE46 /* GMProfile.h */,
+				BC812EF21973AF11005AAE46 /* GMProfile.m */,
+				BC812EF31973AF11005AAE46 /* GMRecentAction.h */,
+				BC812EF41973AF11005AAE46 /* GMRecentAction.m */,
+				BC812EF51973AF11005AAE46 /* GMReward.h */,
+				BC812EF61973AF11005AAE46 /* GMReward.m */,
+				BC812EF71973AF11005AAE46 /* GMStore.h */,
+				BC812EF81973AF11005AAE46 /* GMStore.m */,
+				BC812EF91973AF11005AAE46 /* GMTier.h */,
+				BC812EFA1973AF11005AAE46 /* GMTier.m */,
+				BC812EFB1973AF11005AAE46 /* GMTopPlayer.h */,
+				BC812EFC1973AF11005AAE46 /* GMTopPlayer.m */,
+				BC812EFD1973AF11005AAE46 /* GMUser.h */,
+				BC812EFE1973AF11005AAE46 /* GMUser.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BC812F281973AFFB005AAE46 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC812F2B1973AFFB005AAE46 /* NSData+GMAddition.h */,
+				BC812F2C1973AFFB005AAE46 /* NSData+GMAddition.m */,
+				BC812F2D1973AFFB005AAE46 /* NSString+GMAddition.h */,
+				BC812F2E1973AFFB005AAE46 /* NSString+GMAddition.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC812EA01973AE81005AAE46 /* Gimmie API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API" */;
+			buildPhases = (
+				BC812E9D1973AE81005AAE46 /* Sources */,
+				BC812E9E1973AE81005AAE46 /* Frameworks */,
+				BC812E9F1973AE81005AAE46 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gimmie API";
+			productName = "Gimmie Objective-C API";
+			productReference = BC812EA11973AE81005AAE46 /* libGimmie API.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC812EB01973AE82005AAE46 /* Gimmie API Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API Tests" */;
+			buildPhases = (
+				BC812EAD1973AE82005AAE46 /* Sources */,
+				BC812EAE1973AE82005AAE46 /* Frameworks */,
+				BC812EAF1973AE82005AAE46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC812EB81973AE82005AAE46 /* PBXTargetDependency */,
+			);
+			name = "Gimmie API Tests";
+			productName = "Gimmie Objective-C APITests";
+			productReference = BC812EB11973AE82005AAE46 /* Gimmie Objective-C APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC812E991973AE81005AAE46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Gimmieworld pte ltd.";
+			};
+			buildConfigurationList = BC812E9C1973AE81005AAE46 /* Build configuration list for PBXProject "Gimmie-API" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC812E981973AE81005AAE46;
+			productRefGroup = BC812EA21973AE81005AAE46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC812EA01973AE81005AAE46 /* Gimmie API */,
+				BC812EB01973AE82005AAE46 /* Gimmie API Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC812EAF1973AE82005AAE46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC812F761973BEC9005AAE46 /* Gimmie APITests.plist in Resources */,
+				BC812ED41973AEF3005AAE46 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC812E9D1973AE81005AAE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC812F1B1973AF11005AAE46 /* GMReward.m in Sources */,
+				BC812F071973AF11005AAE46 /* GMBadge.m in Sources */,
+				BC812F131973AF11005AAE46 /* GMIDObject.m in Sources */,
+				BC812F191973AF11005AAE46 /* GMRecentAction.m in Sources */,
+				BC812F011973AF11005AAE46 /* GMGATracker.m in Sources */,
+				BC812F1D1973AF11005AAE46 /* GMStore.m in Sources */,
+				BC812F031973AF11005AAE46 /* GMService.m in Sources */,
+				BC812F151973AF11005AAE46 /* GMMayorship.m in Sources */,
+				BC812F6F1973B144005AAE46 /* GMNetworkOperation.m in Sources */,
+				BC812F0F1973AF11005AAE46 /* GMCombineResponse.m in Sources */,
+				BC812F231973AF11005AAE46 /* GMUser.m in Sources */,
+				BC812F091973AF11005AAE46 /* GMBadgeCategory.m in Sources */,
+				BC812EFF1973AF11005AAE46 /* GMAnalytics.m in Sources */,
+				BC812F111973AF11005AAE46 /* GMEvent.m in Sources */,
+				BC812F1F1973AF11005AAE46 /* GMTier.m in Sources */,
+				BC812F3B1973AFFB005AAE46 /* NSData+GMAddition.m in Sources */,
+				BC812F051973AF11005AAE46 /* GMAction.m in Sources */,
+				BC812F3D1973AFFB005AAE46 /* NSString+GMAddition.m in Sources */,
+				BC812F211973AF11005AAE46 /* GMTopPlayer.m in Sources */,
+				BC812F0D1973AF11005AAE46 /* GMClaim.m in Sources */,
+				BC812F0B1973AF11005AAE46 /* GMCategory.m in Sources */,
+				BC812F171973AF11005AAE46 /* GMProfile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC812EAD1973AE82005AAE46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC812F771973BEC9005AAE46 /* Gimmie_APITests.m in Sources */,
+				BC812F0E1973AF11005AAE46 /* GMClaim.m in Sources */,
+				BC812F021973AF11005AAE46 /* GMGATracker.m in Sources */,
+				BC812F1C1973AF11005AAE46 /* GMReward.m in Sources */,
+				BC812F701973B147005AAE46 /* GMNetworkOperation.m in Sources */,
+				BC812F121973AF11005AAE46 /* GMEvent.m in Sources */,
+				BC812F0A1973AF11005AAE46 /* GMBadgeCategory.m in Sources */,
+				BC812F061973AF11005AAE46 /* GMAction.m in Sources */,
+				BC812F001973AF11005AAE46 /* GMAnalytics.m in Sources */,
+				BC812F161973AF11005AAE46 /* GMMayorship.m in Sources */,
+				BC812F221973AF11005AAE46 /* GMTopPlayer.m in Sources */,
+				BC812F0C1973AF11005AAE46 /* GMCategory.m in Sources */,
+				BC812F201973AF11005AAE46 /* GMTier.m in Sources */,
+				BC812F041973AF11005AAE46 /* GMService.m in Sources */,
+				BC812F101973AF11005AAE46 /* GMCombineResponse.m in Sources */,
+				BC812F181973AF11005AAE46 /* GMProfile.m in Sources */,
+				BC812F081973AF11005AAE46 /* GMBadge.m in Sources */,
+				BC812F3E1973AFFB005AAE46 /* NSString+GMAddition.m in Sources */,
+				BC812F241973AF11005AAE46 /* GMUser.m in Sources */,
+				BC812F1A1973AF11005AAE46 /* GMRecentAction.m in Sources */,
+				BC812F141973AF11005AAE46 /* GMIDObject.m in Sources */,
+				BC812F3C1973AFFB005AAE46 /* NSData+GMAddition.m in Sources */,
+				BC812F1E1973AF11005AAE46 /* GMStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC812EB81973AE82005AAE46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC812EA01973AE81005AAE46 /* Gimmie API */;
+			targetProxy = BC812EB71973AE82005AAE46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC812ECF1973AEF3005AAE46 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC812ED01973AEF3005AAE46 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC812EC21973AE82005AAE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC812EC31973AE82005AAE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC812EC51973AE82005AAE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Gimmie_Objective_C_API.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = API/Gimmie.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BC812EC61973AE82005AAE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Gimmie_Objective_C_API.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = API/Gimmie.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BC812EC81973AE82005AAE46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gimmie Objective-C API/Gimmie Objective-C API-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gimmie Objective-C APITests/Gimmie Objective-C APITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC812EC91973AE82005AAE46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gimmie Objective-C API/Gimmie Objective-C API-Prefix.pch";
+				INFOPLIST_FILE = "Gimmie Objective-C APITests/Gimmie Objective-C APITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC812E9C1973AE81005AAE46 /* Build configuration list for PBXProject "Gimmie-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC812EC21973AE82005AAE46 /* Debug */,
+				BC812EC31973AE82005AAE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC812EC41973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC812EC51973AE82005AAE46 /* Debug */,
+				BC812EC61973AE82005AAE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC812EC71973AE82005AAE46 /* Build configuration list for PBXNativeTarget "Gimmie API Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC812EC81973AE82005AAE46 /* Debug */,
+				BC812EC91973AE82005AAE46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC812E991973AE81005AAE46 /* Project object */;
+}
