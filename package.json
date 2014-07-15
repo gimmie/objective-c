@@ -4,6 +4,7 @@
   "devDependencies": {
     "fs-extra": "^0.10.0",
     "gift": "^0.4.2",
+    "github": "^0.2.1",
     "gulp": "^3.8.0",
     "q": "^1.0.1",
     "wrench": "^1.5.8",
