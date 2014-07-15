@@ -4,10 +4,11 @@ var fs = require('fs-extra')
   , wrench = require('wrench')
   , cp = wrench.copyDirSyncRecursive
   , mkdir = fs.mkdirs
+  , rm = fs.remove
   , gulp = require('gulp')
   , path = require('path')
   , q = require('q')
-  , rm = fs.remove
+  , zip = require('gulp-zip')
   , xcodebuild = require('xcodebuild')
 
 var BUILD_DIR = path.join(process.cwd(), 'build')
@@ -22,7 +23,7 @@ gulp.task('clean', function (done) {
     .done(done)
 })
 
-gulp.task('build', ['clean'], function () {
+gulp.task('build', ['clean'], function (done) {
   q.nfcall(xcodebuild, 'archive', {
     scheme: 'GimmieAPI',
     configuration: 'Release'
@@ -57,14 +58,13 @@ gulp.task('build', ['clean'], function () {
       fs.writeFileSync(to, fs.readFileSync(from))
     })
 
-    console.log ('Finished build')
-
     return
   })
   .done(done)
 })
 
 gulp.task('archive', [ 'build' ], function () {
+  console.log (RELEASE_DIR)
   return gulp.src(path.join(RELEASE_DIR, '**', '*'))
     .pipe(zip('gimmie.zip'))
     .pipe(gulp.dest(BUILD_DIR))
