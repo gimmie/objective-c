@@ -1,4 +1,6 @@
 var fs = require('fs-extra')
+  , git = require('gift')
+  , github = require('github')
   , wrench = require('wrench')
   , cp = wrench.copyDirSyncRecursive
   , mkdir = fs.mkdirs
@@ -52,12 +54,20 @@ gulp.task('build', ['clean'], function () {
     // Copy all headers to release folder
     headers.forEach(function (header) {
       var from = header, to = path.join(HEADER_DIR, path.basename(header))
-      fs.createReadStream(from).pipe(fs.createWriteStream(to))
+      fs.writeFileSync(to, fs.readFileSync(from))
     })
+
+    console.log ('Finished build')
 
     return
   })
   .done(done)
+})
+
+gulp.task('archive', [ 'build' ], function () {
+  return gulp.src(path.join(RELEASE_DIR, '**', '*'))
+    .pipe(zip('gimmie.zip'))
+    .pipe(gulp.dest(BUILD_DIR))
 })
 
 gulp.task('default', [ 'build' ])
