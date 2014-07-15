@@ -5,6 +5,7 @@
     "fs-extra": "^0.10.0",
     "gulp": "^3.8.0",
     "q": "^1.0.1",
+    "wrench": "^1.5.8",
     "xcodebuild": "^1.0.2"
   },
   "repository": {
