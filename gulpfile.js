@@ -17,6 +17,10 @@ var BUILD_DIR = path.join(process.cwd(), 'build')
   , HEADER_DIR = path.join(RELEASE_DIR, 'include')
   , SRC_DIR = path.join(process.cwd(), 'API')
 
+  , MAJOR_VERSION = 0
+  , MINOR_VERSION = 1
+  , PATCH_VERSION = 2
+
 gulp.task('clean', function (done) {
   q.nfcall(xcodebuild, 'clean')
     .then(q.nfcall(rm, BUILD_DIR))
@@ -70,4 +74,39 @@ gulp.task('archive', [ 'build' ], function () {
     .pipe(gulp.dest(BUILD_DIR))
 })
 
-gulp.task('default', [ 'build' ])
+gulp.task('release', function (done) {
+  var repo = git('.')
+  var type = PATCH_VERSION
+
+  q.nfcall(repo.tags.bind(repo))
+    .then(function (tags) {
+      var version = 'v1.0.0'
+      if (tags.length > 0) {
+        var last = tags[tags.length - 1].name
+        var number = last.substring(1).split('.')
+
+        number[type] = parseInt(number[type]) + 1
+        for (var index = type + 1; index < 3; index++) {
+          number[index] = 0
+        }
+        version = 'v' + number.join('.')
+      }
+      return q.nfcall(repo.create_tag.bind(repo), version)
+    })
+    .then(q.nfcall(repo.remote_push.bind(repo), 'origin', '--tags'))
+    .then(function () {
+      assert (process.env.GITHUB_TOKEN, 'GITHUB_TOKEN is required')
+
+      var service = new github({
+        version: '3.0.0'
+      })
+      service.authenticate({
+        type: 'oauth',
+        token: process.env.GITHUB_TOKEN
+      })
+    })
+    .done(done)
+
+})
+
+gulp.task('default', [ 'archive' ])
