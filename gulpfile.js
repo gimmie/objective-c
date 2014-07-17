@@ -1,6 +1,6 @@
 var fs = require('fs-extra')
+  , assert = require('assert')
   , git = require('gift')
-  , github = require('github')
   , wrench = require('wrench')
   , cp = wrench.copyDirSyncRecursive
   , mkdir = fs.mkdirs
@@ -9,6 +9,7 @@ var fs = require('fs-extra')
   , path = require('path')
   , q = require('q')
   , zip = require('gulp-zip')
+  , rest = require('restler')
   , xcodebuild = require('xcodebuild')
 
 var BUILD_DIR = path.join(process.cwd(), 'build')
@@ -20,6 +21,68 @@ var BUILD_DIR = path.join(process.cwd(), 'build')
   , MAJOR_VERSION = 0
   , MINOR_VERSION = 1
   , PATCH_VERSION = 2
+
+var upload = function (version, done) {
+  var repo = git('.')
+    , type = version
+    , version = 'v1.0.0'
+
+  q.nfcall(repo.tags.bind(repo))
+    .then(function (tags) {
+      if (tags.length > 0) {
+        var last = tags[tags.length - 1].name
+        var number = last.substring(1).split('.')
+
+        number[type] = parseInt(number[type]) + 1
+        for (var index = type + 1; index < 3; index++) {
+          number[index] = 0
+        }
+        version = 'v' + number.join('.')
+      }
+      return q.nfcall(repo.create_tag.bind(repo), version)
+    })
+    .then(q.nfcall(repo.remote_push.bind(repo), 'origin', '--tags'))
+    .then(function () {
+      assert (process.env.GITHUB_TOKEN, 'GITHUB_TOKEN is required')
+
+      var github = new (require ('github'))({
+        version: '3.0.0'
+      })
+      github.authenticate({
+        type: 'oauth',
+        token: process.env.GITHUB_TOKEN
+      })
+      return q.nfcall(github.releases.createRelease.bind(github.release), {
+        owner: 'gimmie',
+        repo: 'objective-c',
+        tag_name: version
+      })
+    })
+    .then(function (release) {
+      var id = release.id
+      var deferred = q.defer()
+
+      var file = path.join(BUILD_DIR, 'gimmie.zip')
+      var stat = fs.statSync(file)
+
+      rest.post('https://uploads.github.com/repos/gimmie/objective-c/releases/' + id + '/assets?name=gimmie.zip', {
+        multipart: true,
+        accessToken: process.env.GITHUB_TOKEN,
+        data: {
+          file: rest.file(file, null, stat.size, null, 'application/zip')
+        }
+      })
+      .on('complete', function (data) {
+        deferred.resolve(data)
+      })
+
+      return deferred.promise
+    })
+    .then(function (data) {
+      console.log (data)
+    })
+    .done(done)
+}
 
 gulp.task('clean', function (done) {
   q.nfcall(xcodebuild, 'clean')
@@ -74,39 +137,16 @@ gulp.task('archive', [ 'build' ], function () {
     .pipe(gulp.dest(BUILD_DIR))
 })
 
-gulp.task('release', function (done) {
-  var repo = git('.')
-  var type = PATCH_VERSION
+gulp.task('release-patch', ['archive'], function (done) {
+  upload(PATCH_VERSION, done)
+})
 
-  q.nfcall(repo.tags.bind(repo))
-    .then(function (tags) {
-      var version = 'v1.0.0'
-      if (tags.length > 0) {
-        var last = tags[tags.length - 1].name
-        var number = last.substring(1).split('.')
+gulp.task('release-minor', ['archive'], function (done) {
+  upload(MINOR_VERSION, done)
+})
 
-        number[type] = parseInt(number[type]) + 1
-        for (var index = type + 1; index < 3; index++) {
-          number[index] = 0
-        }
-        version = 'v' + number.join('.')
-      }
-      return q.nfcall(repo.create_tag.bind(repo), version)
-    })
-    .then(q.nfcall(repo.remote_push.bind(repo), 'origin', '--tags'))
-    .then(function () {
-      assert (process.env.GITHUB_TOKEN, 'GITHUB_TOKEN is required')
-
-      var service = new github({
-        version: '3.0.0'
-      })
-      service.authenticate({
-        type: 'oauth',
-        token: process.env.GITHUB_TOKEN
-      })
-    })
-    .done(done)
-
+gulp.task('release-major', ['archive'], function (done) {
+  upload(MAJOR_VERSION, done)
 })
 
 gulp.task('default', [ 'archive' ])
