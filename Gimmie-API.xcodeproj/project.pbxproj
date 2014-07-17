@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC18F3FE1977A7ED00059199 /* GMService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EDC1973AF11005AAE46 /* GMService.h */; };
+		BC18F3FF1977A7F100059199 /* GMNetworkOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812F6D1973B144005AAE46 /* GMNetworkOperation.h */; };
+		BC18F4001977A80C00059199 /* GMAnalytics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812ED81973AF11005AAE46 /* GMAnalytics.h */; };
+		BC18F4011977A80C00059199 /* GMGATracker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EDA1973AF11005AAE46 /* GMGATracker.h */; };
+		BC18F4021977A80C00059199 /* GMAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EDF1973AF11005AAE46 /* GMAction.h */; };
+		BC18F4031977A80C00059199 /* GMBadge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EE11973AF11005AAE46 /* GMBadge.h */; };
+		BC18F4041977A80C00059199 /* GMBadgeCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EE31973AF11005AAE46 /* GMBadgeCategory.h */; };
+		BC18F4051977A80C00059199 /* GMCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EE51973AF11005AAE46 /* GMCategory.h */; };
+		BC18F4061977A80C00059199 /* GMClaim.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EE71973AF11005AAE46 /* GMClaim.h */; };
+		BC18F4071977A80C00059199 /* GMCombineResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EE91973AF11005AAE46 /* GMCombineResponse.h */; };
+		BC18F4081977A80C00059199 /* GMEvent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EEB1973AF11005AAE46 /* GMEvent.h */; };
+		BC18F4091977A80C00059199 /* GMIDObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EED1973AF11005AAE46 /* GMIDObject.h */; };
+		BC18F40A1977A80C00059199 /* GMMayorship.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EEF1973AF11005AAE46 /* GMMayorship.h */; };
+		BC18F40B1977A80C00059199 /* GMProfile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EF11973AF11005AAE46 /* GMProfile.h */; };
+		BC18F40C1977A80C00059199 /* GMRecentAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EF31973AF11005AAE46 /* GMRecentAction.h */; };
+		BC18F40D1977A80C00059199 /* GMReward.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EF51973AF11005AAE46 /* GMReward.h */; };
+		BC18F40E1977A80C00059199 /* GMStore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EF71973AF11005AAE46 /* GMStore.h */; };
+		BC18F40F1977A80C00059199 /* GMTier.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EF91973AF11005AAE46 /* GMTier.h */; };
+		BC18F4101977A80C00059199 /* GMTopPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EFB1973AF11005AAE46 /* GMTopPlayer.h */; };
+		BC18F4111977A80C00059199 /* GMUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812EFD1973AF11005AAE46 /* GMUser.h */; };
+		BC18F4121977A80C00059199 /* NSData+GMAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812F2B1973AFFB005AAE46 /* NSData+GMAddition.h */; };
+		BC18F4131977A80C00059199 /* NSString+GMAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC812F2D1973AFFB005AAE46 /* NSString+GMAddition.h */; };
 		BC812EA51973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
 		BC812EB31973AE82005AAE46 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EB21973AE82005AAE46 /* XCTest.framework */; };
 		BC812EB41973AE82005AAE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC812EA41973AE82005AAE46 /* Foundation.framework */; };
@@ -77,6 +99,28 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				BC18F4001977A80C00059199 /* GMAnalytics.h in CopyFiles */,
+				BC18F4011977A80C00059199 /* GMGATracker.h in CopyFiles */,
+				BC18F4021977A80C00059199 /* GMAction.h in CopyFiles */,
+				BC18F4031977A80C00059199 /* GMBadge.h in CopyFiles */,
+				BC18F4041977A80C00059199 /* GMBadgeCategory.h in CopyFiles */,
+				BC18F4051977A80C00059199 /* GMCategory.h in CopyFiles */,
+				BC18F4061977A80C00059199 /* GMClaim.h in CopyFiles */,
+				BC18F4071977A80C00059199 /* GMCombineResponse.h in CopyFiles */,
+				BC18F4081977A80C00059199 /* GMEvent.h in CopyFiles */,
+				BC18F4091977A80C00059199 /* GMIDObject.h in CopyFiles */,
+				BC18F40A1977A80C00059199 /* GMMayorship.h in CopyFiles */,
+				BC18F40B1977A80C00059199 /* GMProfile.h in CopyFiles */,
+				BC18F40C1977A80C00059199 /* GMRecentAction.h in CopyFiles */,
+				BC18F40D1977A80C00059199 /* GMReward.h in CopyFiles */,
+				BC18F40E1977A80C00059199 /* GMStore.h in CopyFiles */,
+				BC18F40F1977A80C00059199 /* GMTier.h in CopyFiles */,
+				BC18F4101977A80C00059199 /* GMTopPlayer.h in CopyFiles */,
+				BC18F4111977A80C00059199 /* GMUser.h in CopyFiles */,
+				BC18F4121977A80C00059199 /* NSData+GMAddition.h in CopyFiles */,
+				BC18F4131977A80C00059199 /* NSString+GMAddition.h in CopyFiles */,
+				BC18F3FE1977A7ED00059199 /* GMService.h in CopyFiles */,
+				BC18F3FF1977A7F100059199 /* GMNetworkOperation.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
