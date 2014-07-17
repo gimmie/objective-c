@@ -79,7 +79,7 @@ var upload = function (version, done) {
       return deferred.promise
     })
     .then(function (data) {
-      console.log (data)
+      console.log ('Upload complete')
     })
     .done(done)
 }
