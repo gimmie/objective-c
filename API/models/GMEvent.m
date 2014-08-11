@@ -11,6 +11,8 @@
 
 @implementation GMEvent
 
+@synthesize description = _description;
+
 - (id) initWithDictionary:(NSDictionary *)data
 {
     self = [super initWithDictionary:data];
