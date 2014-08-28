@@ -80,6 +80,8 @@
 		BC812F701973B147005AAE46 /* GMNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */; };
 		BC812F761973BEC9005AAE46 /* Gimmie APITests.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC812F741973BEC9005AAE46 /* Gimmie APITests.plist */; };
 		BC812F771973BEC9005AAE46 /* Gimmie_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC812F751973BEC9005AAE46 /* Gimmie_APITests.m */; };
+		BCAAB58419AF1434006CECDD /* GMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAAB58319AF1434006CECDD /* GMLog.m */; };
+		BCAAB58519AF1445006CECDD /* GMLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCAAB58219AF1434006CECDD /* GMLog.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				BCAAB58519AF1445006CECDD /* GMLog.h in CopyFiles */,
 				BC18F4001977A80C00059199 /* GMAnalytics.h in CopyFiles */,
 				BC18F4011977A80C00059199 /* GMGATracker.h in CopyFiles */,
 				BC18F4021977A80C00059199 /* GMAction.h in CopyFiles */,
@@ -179,6 +182,8 @@
 		BC812F6E1973B144005AAE46 /* GMNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMNetworkOperation.m; sourceTree = "<group>"; };
 		BC812F741973BEC9005AAE46 /* Gimmie APITests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Gimmie APITests.plist"; sourceTree = "<group>"; };
 		BC812F751973BEC9005AAE46 /* Gimmie_APITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gimmie_APITests.m; sourceTree = "<group>"; };
+		BCAAB58219AF1434006CECDD /* GMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLog.h; sourceTree = "<group>"; };
+		BCAAB58319AF1434006CECDD /* GMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +247,8 @@
 				BC812ED71973AF11005AAE46 /* analytics */,
 				BC812EDE1973AF11005AAE46 /* models */,
 				BC812F281973AFFB005AAE46 /* utils */,
+				BCAAB58219AF1434006CECDD /* GMLog.h */,
+				BCAAB58319AF1434006CECDD /* GMLog.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -417,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC812F1B1973AF11005AAE46 /* GMReward.m in Sources */,
+				BCAAB58419AF1434006CECDD /* GMLog.m in Sources */,
 				BC812F071973AF11005AAE46 /* GMBadge.m in Sources */,
 				BC812F131973AF11005AAE46 /* GMIDObject.m in Sources */,
 				BC812F191973AF11005AAE46 /* GMRecentAction.m in Sources */,

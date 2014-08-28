@@ -107,7 +107,7 @@ static NSOperationQueue *networkQueue = nil;
             if (!country) {
                 country = GMCountryGlobal;
             }
-            NSLog(@"Gimmie country: %@", country);
+            [GMLog debug:@"Gimmie country: %@", country];
             
             NSString *locale = [gimmieSettings objectForKey:@"locale"];
             if (!locale) {
@@ -239,7 +239,7 @@ static NSOperationQueue *networkQueue = nil;
                                      @"id": [token hexRepresentationWithSpaces_AS:NO]};
         [self invokeTarget:@"register_token.json" parameters:parameters callback:^(NSError *error, NSDictionary *output) {
             if (error) {
-                NSLog(@"Error: %@", error);
+                [GMLog debug:@"Error: %@", error];
                 return;
             }
             
@@ -550,7 +550,7 @@ static NSOperationQueue *networkQueue = nil;
     }
     
     [self invokeTarget:@"login.json" parameters:parameter callback:^(NSError *error, NSDictionary *output) {
-        if (error) NSLog(@"Gimmie error: %@", error);
+        if (error) [GMLog debug:@"Error: %@", error];
     }];
 }
 

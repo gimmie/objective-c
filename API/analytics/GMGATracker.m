@@ -11,6 +11,8 @@
 
 #import "GMService.h"
 
+#import "GMLog.h"
+
 @interface GMGATracker(internal)
 
 + (NSString *) dimensionKeyFromName:(NSString *) name;
@@ -71,7 +73,7 @@
     [request setHTTPBody:[payload dataUsingEncoding:NSUTF8StringEncoding]];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        NSLog(@"Response: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+        [GMLog debug:@"Response: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
     }];
 }
 

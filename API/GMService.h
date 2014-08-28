@@ -5,7 +5,7 @@
 //  Created by llun on 11/26/12.
 //  Copyright (c) 2012 gimmie. All rights reserved.
 //
-#define SDK_VERSION @"ios 2.3.4"
+#define SDK_VERSION @"ios 2.7.1"
 
 #import <Foundation/Foundation.h>
 
@@ -23,6 +23,7 @@
 #import "GMMayorship.h"
 #import "GMBadgeCategory.h"
 #import "GMCombineResponse.h"
+#import "GMLog.h"
 
 extern NSString * const GMNetworkErrorNotification;
 extern NSString * const GMEventTriggerDidResponseNotification;

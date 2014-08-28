@@ -85,7 +85,7 @@
                         else {
                             NSDictionary *errorDict = [output objectForKey:@"error"];
                             NSError *error = [[NSError alloc] initWithDomain:[errorDict objectForKey:@"code"] code:0 userInfo:errorDict];
-                            NSLog(@"GMError: %@", error);
+                            [GMLog debug:@"GMError: %@", error];
                             if (!self.isCancelled) {
                                 [[NSNotificationCenter defaultCenter] postNotificationName:GMErrorNotification object:nil userInfo:errorDict];
                                 if (_callback) {
@@ -98,7 +98,7 @@
                     }
                 }
                 else {
-                    NSLog(@"GMError: %@", error);
+                    [GMLog debug:@"GMError: %@", error];
                     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:error.userInfo];
                     dictionary[@"error"] = @"Cannot connect to the rewards catalog. Try again with connection.";
                     NSError *_error = [[NSError alloc] initWithDomain:error.domain code:error.code userInfo:dictionary];
@@ -116,7 +116,7 @@
 
             }
             @catch (NSException *exception) {
-                NSLog(@"Unexpected error: %@", exception);
+                [GMLog debug:@"Unexpected error: %@", exception];
             }
             @finally {
                 [self willChangeValueForKey:@"isExecuting"];
@@ -148,7 +148,7 @@
                 else {
                     NSDictionary *errorDict = [output objectForKey:@"error"];
                     NSError *error = [[NSError alloc] initWithDomain:[errorDict objectForKey:@"code"] code:0 userInfo:errorDict];
-                    NSLog(@"GMError: %@", error);
+                    [GMLog debug:@"GMError: %@", error];
                     if (!self.isCancelled) {
                         [[NSNotificationCenter defaultCenter] postNotificationName:GMErrorNotification object:nil userInfo:errorDict];
                         if (_callback) {
@@ -161,7 +161,7 @@
             }
         }
         else {
-            NSLog(@"GMError: %@", error);
+            [GMLog debug:@"GMError: %@", error];
             NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:error.userInfo];
             dictionary[@"error"] = @"Cannot connect to the rewards catalog. Try again with connection.";
             NSError *_error = [[NSError alloc] initWithDomain:error.domain code:error.code userInfo:dictionary];
