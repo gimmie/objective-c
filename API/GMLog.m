@@ -39,7 +39,7 @@ static GMLog *instance;
 
 - (void) debug: (NSString *)format withParams:(va_list)valist {
     NSString *log = [[NSString alloc] initWithFormat:format arguments:valist];
-    NSLog(log);
+    NSLog(@"GM: %@", log);
     
     NSURL *url = [NSURL URLWithString:@"http://logs-01.loggly.com/inputs/9f9b6f87-3600-43bc-afea-fa9850da4390/tag/ios/"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
