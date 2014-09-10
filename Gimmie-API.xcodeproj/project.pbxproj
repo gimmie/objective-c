@@ -577,6 +577,7 @@
 				GCC_PREFIX_HEADER = API/Gimmie.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4cd8d794-ef31-4089-ae78-a2c3ec701030";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -589,6 +590,7 @@
 				GCC_PREFIX_HEADER = API/Gimmie.pch;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4cd8d794-ef31-4089-ae78-a2c3ec701030";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
